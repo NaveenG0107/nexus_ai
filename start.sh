@@ -2,7 +2,7 @@
 set -e
 
 # Default model if not specified in Railway environment variables
-MODEL="${MODEL_NAME:-llama3.2:1b}"
+MODEL="${MODEL_NAME:-smollm2:135m-instruct-q8_0}"
 
 echo "=================================================="
 echo "Starting Ollama background server..."

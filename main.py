@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 # Configuration from environment variables
-MODEL_NAME = os.getenv("MODEL_NAME", "llama3.2:1b")
+MODEL_NAME = os.getenv("MODEL_NAME", "smollm2:135m-instruct-q8_0")
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
 # Initialize Ollama client
