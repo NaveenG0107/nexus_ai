@@ -29,7 +29,7 @@ COPY . .
 RUN sed -i 's/\r$//' start.sh && chmod +x start.sh
 
 # Expose default port (Railway injects dynamic $PORT at runtime)
-EXPOSE 8000
+EXPOSE 8080
 
 # Run our orchestrator startup script
 CMD ["./start.sh"]

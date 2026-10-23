@@ -22,6 +22,6 @@ ollama pull "$MODEL"
 echo "Model '$MODEL' is ready!"
 
 # Start FastAPI server via Uvicorn (replacing shell as PID 1)
-PORT_NUM="${PORT:-8000}"
+PORT_NUM="${PORT:-8080}"
 echo "Launching FastAPI server on 0.0.0.0:$PORT_NUM..."
 exec uvicorn main:app --host 0.0.0.0 --port "$PORT_NUM"
